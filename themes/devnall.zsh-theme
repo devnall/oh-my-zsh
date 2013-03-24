@@ -13,6 +13,11 @@
 if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="green"; fi
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
+if [ "${whoami}" = "root" ]
+then CARETCOLOR="red"
+else CARETCOLOR="blue"
+fi
+
 # primary prompt
 PROMPT='$FG[237]--------------------------------------------------------------------------------%{$reset_color%}
 $FG[032]%~\
