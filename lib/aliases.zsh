@@ -23,10 +23,6 @@ alias la='ls -lA'
 
 alias rm='rm -i'
 alias du='du -h'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-
 alias cl='clear'
 
 alias cp='cp -i'
