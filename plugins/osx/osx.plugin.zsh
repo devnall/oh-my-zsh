@@ -121,11 +121,11 @@ function pfs() {
 EOF
 }
 
-function cdf() {
+function cdfind() {
   cd "$(pfd)"
 }
 
-function pushdf() {
+function pushdfind() {
   pushd "$(pfd)"
 }
 
