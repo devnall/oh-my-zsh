@@ -6,10 +6,11 @@ setopt pushdminus
 
 alias ..='cd ..'
 alias cd..='cd ..'
-alias cd...='cd ../..'
-alias cd....='cd ../../..'
-alias cd.....='cd ../../../..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 alias cd/='cd /'
+alias -- -='cd -'
 
 alias 1='cd -'
 alias 2='cd -2'
