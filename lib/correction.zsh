@@ -8,5 +8,5 @@ else
   alias mkdir='nocorrect mkdir'
   alias gist='nocorrect gist'
   alias heroku='nocorrect heroku'
- alias sudo='nocorrect sudo'
+  alias sudo='nocorrect sudo'
 fi
