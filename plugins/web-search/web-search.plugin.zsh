@@ -38,6 +38,6 @@ function web_search() {
   $open_cmd "$url"
 }
 
-alias bing='web_search bing'
+# alias bing='web_search bing'
 alias google='web_search google'
-alias yahoo='web_search yahoo'
+# alias yahoo='web_search yahoo'
