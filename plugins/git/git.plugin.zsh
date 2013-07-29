@@ -54,7 +54,7 @@ alias gcp='git cherry-pick'
 compdef _git gcp=git-cherry-pick
 #alias glg='git log --stat --max-count=5'
 #compdef _git glg=git-log
-alias glg='git log --pretty=format"%h %ad | %s%d [%an]" --graph --date=short'
+alias glg='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 compdef _git glg=git-log
 ##
 alias glgg='git log --graph --max-count=5'
