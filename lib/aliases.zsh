@@ -18,7 +18,10 @@ alias la='ls -lA'
 
 alias rm='rm -i'
 alias du='du -h'
-alias cl='clear'
+
+# Use the keyboard shortcut, dummy
+alias cl='echo "No! Use CTRL+L!"'
+alias clear='echo "No! Use CTRL+L!"'
 
 alias cp='cp -i'
 alias mv='mv -i'
