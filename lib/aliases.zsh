@@ -12,6 +12,7 @@ alias history='fc -l 1'
 
 # List direcory contents
 alias lsa='ls -lahF'
+alias lsal='ls -lahF|less'
 alias l='ls -lA1'
 alias ll='ls -l'
 alias la='ls -lA'
