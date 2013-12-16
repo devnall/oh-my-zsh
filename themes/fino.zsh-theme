@@ -29,6 +29,7 @@ else
     ruby_env=' ‹$(rbenv version-name)›%{$reset_color%}'
   fi
 fi
+
 local current_dir='${PWD/#$HOME/~}'
 local git_info='$(git_prompt_info)'
 local prompt_char='$(prompt_char)'
