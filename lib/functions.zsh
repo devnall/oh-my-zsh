@@ -95,3 +95,4 @@ function default() {
 function env_default() {
     env | grep -q "^$1=" && return 0 
     export "$1=$2"       && return 3
+}
