@@ -1,7 +1,11 @@
 # Symfony2 basic command completion
 
 _symfony_console () {
+<<<<<<< HEAD
   echo "php $(find . -maxdepth 2 -mindepth 1 -name 'console')"
+=======
+  echo "php $(find . -maxdepth 2 -mindepth 1 -name 'console' -type f | head -n 1)"
+>>>>>>> upstream/master
 }
 
 _symfony2_get_command_list () {
@@ -13,6 +17,11 @@ _symfony2 () {
 }
 
 compdef _symfony2 '`_symfony_console`'
+<<<<<<< HEAD
+=======
+compdef _symfony2 'app/console'
+compdef _symfony2 'bin/console'
+>>>>>>> upstream/master
 compdef _symfony2 sf
 
 #Alias
