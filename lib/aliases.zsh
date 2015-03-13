@@ -23,9 +23,9 @@ fi
 # List direcory contents
 alias lsa='ls -lahF'
 alias lsal='ls -lahF|less'
-alias l='ls -lA1'
+alias l='ls -lah'
 alias ll='ls -l'
-alias la='ls -lA'
+alias la='ls -lAh'
 
 alias rm='rm -i'
 alias du='du -h'
