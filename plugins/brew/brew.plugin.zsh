@@ -1,5 +1,5 @@
-alias brews='brew list'
-alias brewupd='brew update'
-alias brewupg='brew upgrade --all'
+alias brews='brew list -1'
+alias brewupd='brew update && brew outdated'
+alias brewupg='brew upgrade --all && brew cleanup'
 alias brewdr='brew doctor'
-alias bubu="brew update && brew upgrade --all && brew cleanup"
+alias bubu='brewupd && brewupg && brewdr'
