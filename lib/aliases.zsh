@@ -50,3 +50,8 @@ if [[ `which cdf` == '/usr/local/bin/cdf' ]]; then
 else
   alias df='df -h'
 fi
+
+# No "free" command on OSX, here's a hacky substitute
+if [[ `uname` == 'Darwin' ]]; then
+  alias free="top -l 1 -s 0 | grep PhysMem"
+fi
