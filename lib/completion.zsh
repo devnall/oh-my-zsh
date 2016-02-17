@@ -1,10 +1,11 @@
 # fixme - the load process here seems a bit bizarre
 
-unsetopt menu_complete   # do not autoselect the first completion entry
-unsetopt flowcontrol
-setopt auto_menu         # show completion menu on succesive tab press
-setopt complete_in_word
-setopt always_to_end
+unsetopt MENU_COMPLETE   # do not autoselect the first completion entry
+unsetopt FLOWCONTROL
+setopt AUTO_MENU         # show completion menu on succesive tab press
+setopt COMPLETE_IN_WORD
+setopt ALWAYS_TO_END
+setopt COMPLETE_ALIASES
 
 WORDCHARS=''
 
