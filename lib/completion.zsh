@@ -44,6 +44,12 @@ zstyle ':completion:*:cd:*' tag-order local-directories directory-stack path-dir
 zstyle ':completion::complete:*' use-cache 1
 zstyle ':completion::complete:*' cache-path $ZSH_CACHE_DIR
 
+# Pasting with tabs doesn't perform completion
+zstyle ':completion:*' insert-tab pending
+
+# Default to file completion
+zstyle ':completion:*' completer _expand _complete _files _correct _approximate
+
 # Don't complete uninteresting users
 zstyle ':completion:*:*:*:users' ignored-patterns \
         adm amanda apache at avahi avahi-autoipd beaglidx bin cacti canna \
