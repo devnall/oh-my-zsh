@@ -16,7 +16,7 @@ function take() {
 }
 
 function dusk() {
-  du -sk "$@" | sort -n | while read size fname 
+  du -sk "$@" | sort -n | while read size fname
     do for unit in k M G T P E Z Y
       do if [ $size -lt 1024 ]
         then echo -e "${size}${unit}\t${fname}"
@@ -28,7 +28,7 @@ function dusk() {
 }
 
 function duck() {
-  du -ck "$@" | sort -n | while read size fname 
+  du -ck "$@" | sort -n | while read size fname
     do for unit in k M G T P E Z Y
       do if [ $size -lt 1024 ]
         then echo -e "${size}${unit}\t${fname}"
