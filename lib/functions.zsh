@@ -39,6 +39,10 @@ function duck() {
   done
 }
 
+function md() {
+  mkdir -p "$@" && cd "$@"
+}
+
 function open_command() {
   emulate -L zsh
   setopt shwordsplit

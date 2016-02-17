@@ -23,7 +23,6 @@ alias 7='cd -7'
 alias 8='cd -8'
 alias 9='cd -9'
 
-alias md='mkdir -p'
 alias rd=rmdir
 alias d='dirs -v | head -10'
 
