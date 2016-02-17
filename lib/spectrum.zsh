@@ -35,3 +35,15 @@ function spectrum_bls() {
     print -P -- "$code: %{$BG[$code]%}$ZSH_SPECTRUM_TEXT%{$reset_color%}"
   done
 }
+
+# Version to see all colors on one screen
+function spectrum() {
+  for i in {0..255}; do
+    printf "\x1b[38;5;${i}m colour${i}"
+    if (( $i % 5 == 0 )); then
+      printf "\n"
+    else
+      printf "\t"
+    fi
+  done
+}
