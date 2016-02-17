@@ -71,7 +71,7 @@ if [[ `uname` == 'Darwin' ]]; then
 fi
 
 # Grab IP addresses
-alias ip='echo "External IP:   " `dig +short myip.opendns.com @resolver1.opendns.com` && echo "Ethernet (en1):" `ipconfig getifaddr en1` && echo "Wireless (en0):" `ipconfig getifaddr en0`'
+alias ip='echo "External IP:   " `dig +short myip.opendns.com @resolver1.opendns.com` && echo "Ethernet (en3):" `ipconfig getifaddr en3` && echo "Wireless (en0):" `ipconfig getifaddr en0`'
 # TODO: Turn this into a function that can handle different OSes
 alias localip='echo "Ethernet (en0):" `ipconfig getifaddr en0` && echo "Wireless (en1):" `ipconfig getifaddr en1`'
 alias ips='ifconfig -a | perl -nle"/(\d+\.\d+\.\d+\.\d+)/ && print $1"'
