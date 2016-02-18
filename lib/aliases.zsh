@@ -8,7 +8,6 @@ alias po='popd'
 # Super user
 alias _='sudo'
 
-alias grep='grep --color=auto'
 alias gr='grep -in'
 
 # Show history

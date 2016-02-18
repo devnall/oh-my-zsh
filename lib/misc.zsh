@@ -22,10 +22,6 @@ setopt long_list_jobs
 export PAGER="less"
 export LESS="--quit-if-one-screen --hilite-search --ignore-case --LONG-PROMPT --RAW-CONTROL-CHARS --hilite-unread --no-init --window=-4"
 
-## super user alias
-alias _='sudo'
-alias please='sudo'
-
 ## more intelligent acking for ubuntu users
 if which ack-grep &> /dev/null; then
   alias afind='ack-grep -il'
