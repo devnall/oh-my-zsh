@@ -1,3 +1,8 @@
+This is my heavily modified fork of oh-my-zsh
+Mainly, it's an attempt to rip out all of the stuff that I don't use and consolodate the stuff that I do use
+I make no guarentee that it will work for anyone else
+I offer no support
+
 <p align="center">
   <img src="https://s3.amazonaws.com/ohmyzsh/oh-my-zsh-logo.png" alt="Oh My Zsh">
 </p>
@@ -12,9 +17,9 @@ To learn more, visit [ohmyz.sh](http://ohmyz.sh) and follow [@ohmyzsh](https://t
 
 ### Prerequisites
 
-__Disclaimer:__ _Oh My Zsh works best on Mac OS X and Linux._
+__Disclaimer:__ _Oh My Zsh works best on OS X and Linux._
 
-* Unix-based operating system (Mac OS X or Linux)
+* Unix-based operating system (OS X or Linux)
 * [Zsh](http://www.zsh.org) should be installed (v4.3.9 or more recent). If not pre-installed (`zsh --version` to confirm), check the following instruction here: [Installing ZSH](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
 * `curl` or `wget` should be installed
 * `git` should be installed
@@ -26,13 +31,13 @@ Oh My Zsh is installed by running one of the following commands in your terminal
 #### via curl
 
 ```shell
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/devnall/oh-my-zsh/master/tools/install.sh)"
 ```
 
 #### via wget
 
 ```shell
-sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sh -c "$(wget https://raw.githubusercontent.com/devnall/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
 ## Using Oh My Zsh
@@ -40,6 +45,8 @@ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install
 ### Plugins
 
 Oh My Zsh comes with a shit load of plugins to take advantage of. You can take a look in the [plugins](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins) directory and/or the [wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins) to see what's currently available.
+
+Note: this fork excludes a lot of the plugins that ship with the upstream OMZ
 
 #### Enabling Plugins
 
@@ -104,7 +111,7 @@ The default location is `~/.oh-my-zsh` (hidden in your home directory)
 If you'd like to change the install directory with the `ZSH` environment variable, either by running `export ZSH=/your/path` before installing, or by setting it before the end of the install pipeline like this:
 
 ```shell
-export ZSH="$HOME/.dotfiles/oh-my-zsh"; sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+export ZSH="$HOME/.dotfiles/oh-my-zsh"; sh -c "$(curl -fsSL https://raw.githubusercontent.com/devnall/oh-my-zsh/master/tools/install.sh)"
 ```
 
 #### Manual Installation
@@ -112,7 +119,7 @@ export ZSH="$HOME/.dotfiles/oh-my-zsh"; sh -c "$(curl -fsSL https://raw.github.c
 ##### 1. Clone the repository:
 
 ```shell
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+git clone git://github.com/devnall/oh-my-zsh.git ~/.oh-my-zsh
 ```
 
 ##### 2. *Optionally*, backup your existing `~/.zshrc` file:
