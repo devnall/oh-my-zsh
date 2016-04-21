@@ -5,7 +5,7 @@ unsetopt FLOWCONTROL
 setopt AUTO_MENU         # show completion menu on succesive tab press
 setopt COMPLETE_IN_WORD
 setopt ALWAYS_TO_END
-setopt COMPLETE_ALIASES
+#setopt COMPLETE_ALIASES
 
 WORDCHARS=''
 
