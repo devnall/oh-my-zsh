@@ -27,18 +27,21 @@ fi
 # List direcory contents
 
 # Determine flavor of `ls`
+# TODO: Break the lsal stuff into its own function
 if ls --color > /dev/null 2>&1; then # GNU `ls`
   colorflag="--color"
+  lsal='ls -lahF ${colorflag} | less -R'
 else # OSX `ls`
   colorflag="-G"
+  alias lsal='CLICOLOR_FORCE=1 ls -lahF ${colorflag} | less -R'
 fi
 
+alias l='ls -lAhF ${colorflag}'
+alias ll='ls -lhF ${colorflag}'
+alias la='ls -AhF ${colorflag}'
 alias lsa='ls -lahF ${colorflag}'
-alias lsal='ls -lahF ${colorflag} | less'
-alias l='ls -lah ${colorflag}'
-alias ll='ls -l ${colorflag}'
-alias la='ls -lAh ${colorflag}'
-alias lsg='ls -lahF ${colorflag} | grep ^d'
+#alias lsal='ls -lahF ${colorflag} | less -R'
+#alias lsg='ls -lahF ${colorflag} | grep ^d'
 
 alias rm='rm -i'
 alias du='du -h'
