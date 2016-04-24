@@ -8,7 +8,7 @@ alias po='popd'
 # Super user
 alias _='sudo'
 
-alias gr='grep -in'
+alias gr='grep -in --color'
 
 # Show history
 if [ "$HIST_STAMPS" = "mm/dd/yyyy" ]
@@ -30,7 +30,7 @@ fi
 # TODO: Break the lsal stuff into its own function
 if ls --color > /dev/null 2>&1; then # GNU `ls`
   colorflag="--color"
-  lsal='ls -lahF ${colorflag} | less -R'
+  alias lsal='ls -lahF ${colorflag} | less -R'
 else # OSX `ls`
   colorflag="-G"
   alias lsal='CLICOLOR_FORCE=1 ls -lahF ${colorflag} | less -R'
@@ -41,17 +41,15 @@ alias ll='ls -lhF ${colorflag}'
 alias la='ls -AhF ${colorflag}'
 alias lsa='ls -lahF ${colorflag}'
 #alias lsal='ls -lahF ${colorflag} | less -R'
-#alias lsg='ls -lahF ${colorflag} | grep ^d'
 
 alias rm='rm -i'
 alias du='du -h'
+alias cp='cp -i'
+alias mv='mv -i'
 
 # Use the keyboard shortcut, dummy
 alias cl='echo "No! Use CTRL+L!"'
 alias clear='echo "No! Use CTRL+L!"'
-
-alias cp='cp -i'
-alias mv='mv -i'
 
 alias tf='tail -f'
 
